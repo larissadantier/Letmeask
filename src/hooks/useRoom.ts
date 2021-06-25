@@ -24,6 +24,8 @@ type QuestionType = {
     content: string;
     isAnswered: string;
     isHighlighted: string;
+    likeCount: number;
+    likeId:string | undefined;
   }
 
 export function useRoom(roomId: string){
@@ -32,7 +34,7 @@ export function useRoom(roomId: string){
     const [title, setTitle] = useState('')
 
     useEffect(() => {
-        const roomRef = database.ref(`rooms/${roomId}`)
+        const roomRef = database.ref(`rooms/${roomId}`);
   
         roomRef.on('value', room => {
           const databaseRoom = room.val();
@@ -46,12 +48,16 @@ export function useRoom(roomId: string){
               isHighlighted:value.isHighlighted,
               isAnswered:value.isAnswered,
               likeCount: Object.values(value.likes ?? {}).length,
-              hasLiked: Object.values(value.likes ?? {}).some(like => like.authorId === user?.id),
+              likeId: Object.entries(value.likes ?? {}).find(([key, like]) => like.authorId === user?.id)?.[0],
             }
           })
           setTitle(databaseRoom.title);
           setQuestions(parsedQuestions);
         })
+
+        return() => {
+          roomRef.off('value');
+        }
       },[roomId, user?.id])
 
       return{questions, title}

@@ -1,5 +1,4 @@
 import copyImg from "../../assets/images/copy.svg";
-import { Button } from "../Button";
 import './styles.scss'
 
 type RoomCodeProps = {

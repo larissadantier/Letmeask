@@ -46,7 +46,7 @@ Este é um projeto desenvolvido durante a **[Next Level Week](https://nextlevelw
 📖 Para rodar o projeto localmente você precisará seguir algumas instruções.
 
 - É necessário que o <a href="https://nodejs.org/en/">NodeJS</a> esteja instalado em sua máquina.
-- É necessário utilizar este <a href="https://classic.yarnpkg.com/en/">Yarn</a> ou <a href="https://www.npmjs.com/">Npm</a> para a instalação de pacotes.
+- É necessário utilizar <a href="https://classic.yarnpkg.com/en/">Yarn</a> ou <a href="https://www.npmjs.com/">Npm</a> para a instalação de pacotes.
 
 ### Instalação
 ```bash

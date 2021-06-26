@@ -55,7 +55,7 @@ export function AdminRoom(){
     }
 
     return(
-        <div id='page-room' className={theme}>
+        <div id='page-room-admin' className={theme}>
 					<header>
 						<div className='content'>
 							<img src={theme === 'light' ? logoImg : logoLightImg} alt="Letmeask" />

@@ -154,15 +154,15 @@
 			filter: brightness(0.9);
 		}
 
-    @media screen and (max-width:480px){
-      width:100%;
-      overflow: hidden;
-      font-size: 0.894rem;
+		@media screen and (max-width:480px){
+		width:100%;
+		overflow: hidden;
+		font-size: 0.894rem;
 
-      img {
-        display:none;
-      }
-   }
+		img {
+			display:none;
+		}
+	}
 	}
 	.separator{
 		font-size: 14px;

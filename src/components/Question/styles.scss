@@ -19,7 +19,6 @@
 
    &.answered {
     background:#DBDCDD;
-    
    }
    
    p {
@@ -79,5 +78,10 @@
         }
       }
    }
+
+   @media screen and (max-width:768px){
+     width:90%;
+     margin:0 auto;
+  }
 }
 

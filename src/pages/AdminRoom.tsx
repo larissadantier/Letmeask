@@ -3,6 +3,7 @@ import deleteImg from '../assets/images/delete.svg';
 import checkImg from '../assets/images/check.svg';
 import answerImg from '../assets/images/answer.svg';
 import logoImg from '../assets/images/logo.svg';
+import logoLightImg from '../assets/images/logo-light.svg'
 import { Button } from '../components/Button';
 import { Question } from '../components/Question';
 import { RoomCode } from '../components/RoomCode';
@@ -10,6 +11,8 @@ import { useRoom } from '../hooks/useRoom';
 import { database } from '../services/firebase';
 
 import '../styles/room.scss';
+import { useTheme } from '../hooks/useTheme';
+import { Toggle } from '../components/Toggle';
 
 type RoomParams = {
   id: string;
@@ -21,6 +24,7 @@ export function AdminRoom(){
     const roomId = params.id;
 
     const { title, questions } = useRoom(roomId)
+    const {theme} = useTheme();
 
     console.log(questions);
 
@@ -51,10 +55,10 @@ export function AdminRoom(){
     }
 
     return(
-        <div id='page-room'>
+        <div id='page-room' className={theme}>
 					<header>
 						<div className='content'>
-							<img src={logoImg} alt="Letmeask" />
+							<img src={theme === 'light' ? logoImg : logoLightImg} alt="Letmeask" />
 							<div>
 								<RoomCode code={roomId}/>
 								<Button isOutlined onClick={handleEndRoom}>Encerrar Sala</Button>
@@ -65,6 +69,7 @@ export function AdminRoom(){
 					<main className="content">
 						<div className='room-title'>
 							<h1>Sala {title}</h1>
+              <Toggle />
 							{questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
 						</div>
 

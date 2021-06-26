@@ -1,12 +1,14 @@
 import { FormEvent, useState } from 'react';
 import {useParams} from 'react-router-dom'
-
+import logoLightImg from '../assets/images/logo-light.svg'
 import logoImg from '../assets/images/logo.svg';
 import { Button } from '../components/Button/';
 import { Question } from '../components/Question/';
 import { RoomCode } from '../components/RoomCode/';
+import { Toggle } from '../components/Toggle';
 import { useAuth } from '../hooks/useAuth';
 import { useRoom } from '../hooks/useRoom';
+import { useTheme } from '../hooks/useTheme';
 import { database } from '../services/firebase';
 
 import '../styles/room.scss';
@@ -21,7 +23,8 @@ export function Room(){
     const [newQuestion, setNewQuestion] = useState('');
     const roomId = params.id;
 
-    const { title, questions } = useRoom(roomId)    
+    const { title, questions } = useRoom(roomId);
+    const {theme} = useTheme();    
 
     async function handleSendQuestion(event: FormEvent){
       event.preventDefault();
@@ -60,10 +63,10 @@ export function Room(){
     }
 
     return(
-        <div id='page-room'>
+        <div id='page-room' className={theme}>
 					<header>
 						<div className='content'>
-							<img src={logoImg} alt="Letmeask" />
+							<img src={theme === 'light' ? logoImg : logoLightImg} alt="Letmeask" />
 							<RoomCode code={roomId}/>
 						</div>
 					</header>
@@ -71,6 +74,7 @@ export function Room(){
 					<main className="content">
 						<div className='room-title'>
 							<h1>Sala {title}</h1>
+              <Toggle />
 							{questions.length > 0 && <span>{questions.length} pergunta(s)</span>}
 						</div>
 

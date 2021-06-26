@@ -1,6 +1,7 @@
 import { ReactNode } from "react"
 import cx from 'classnames';
 import './styles.scss'
+import { useTheme } from "../../hooks/useTheme";
 
 type QuestionProps = {
 	content:string;
@@ -32,7 +33,7 @@ export function Question({
 			<footer>
 				<div className="user-info">
 					<img src={author.avatar} alt={author.name} />
-					<span>{author.name}</span>
+					<p>{author.name}</p>
 				</div>
         <div>{children}</div>
 			</footer>

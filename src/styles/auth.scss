@@ -18,15 +18,14 @@
       margin-top:0.5rem;
       margin-bottom:-1.5rem;
       padding: 0.5rem;
-  }
+  	}
 
 	&.dark {
 		background:#292929;
     h2{
       color: #FFF;
     }
-
-	}
+   }
 
 	aside {
 		flex: 7;
@@ -75,10 +74,10 @@
 		align-items:stretch;
 		text-align: center;
 
-    .toggleTheme{
+    .toggleTheme {
       width:10%;
       border: 0;
-    }
+     }
 
 		> img {
 			align-self: center;

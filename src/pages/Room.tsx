@@ -1,5 +1,5 @@
 import { FormEvent, useEffect, useState } from 'react';
-import {useHistory, useParams} from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom'
 import logoLightImg from '../assets/images/logo-light.svg'
 import logoImg from '../assets/images/logo.svg';
 import { Button } from '../components/Button/';

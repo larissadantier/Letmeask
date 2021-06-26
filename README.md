@@ -37,7 +37,7 @@ Tecnologias utilizadas durante o projeto:
 
 ## 💻 Projeto
 
-O Letmeask é uma plataforma de criar salas para que pessoas possam fazer perguntas e serem ajudadas em um terminado tema (Dúvidas de programação e jogos por exemplo) 😄.
+O Letmeask é uma plataforma de criar salas para que pessoas possam fazer perguntas e serem ajudadas em um determinado tema (Dúvidas de programação e jogos por exemplo) 😄.
 
 Este é um projeto desenvolvido durante a **[Next Level Week](https://nextlevelweek.com/)**, realizada pela **[@Rocketseat](https://github.com/Rocketseat)** 21/06/2021 até 25/06/2021.
 

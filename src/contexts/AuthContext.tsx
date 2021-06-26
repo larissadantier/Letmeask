@@ -23,7 +23,7 @@ export const AuthContext = createContext({} as AuthContextType);
 
 export function AuthContextProvider(props: AuthContextProviderProps){
 	const [user, setUser] = useState<User>();
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(false);
   const history = useHistory();
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export function AuthContextProvider(props: AuthContextProviderProps){
           name: displayName,
           avatar: photoURL
        })
-       //setLoading(false);
+         //setLoading(false);
       }
     })
 
@@ -74,9 +74,9 @@ export function AuthContextProvider(props: AuthContextProviderProps){
      history.push('/');
    }
 
-   /* if(loading){
+    /* if(loading){
     return <Loading />
-  } */
+   } */
 
     return(
 			<AuthContext.Provider value={{user, signInWithGoogle, signOut}}>

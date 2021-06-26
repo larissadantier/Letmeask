@@ -1,14 +1,14 @@
 #page-room{
 
 	&.dark {
-		height:100vh;
+		min-height:100vh;
 		background:#292929;
 	h1, h2, span{
       color: #FFF;
     }
 
     @media screen and (max-width:768px){
-      height:100vh;
+      padding-bottom: 0.5rem;
     }
    }
 

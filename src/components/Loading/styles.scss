@@ -5,6 +5,11 @@
     height: 900px;
 	  margin: 0 auto;
 
+    &.dark {
+      background:#292929;
+      height:100vh;
+     }
+
     .container-loading{
       display:flex;
       flex-direction:column;

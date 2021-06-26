@@ -35,6 +35,12 @@
           height:40px;
         }
       }
+
+      div:last-child{
+        img {
+          cursor:pointer;
+        }
+      }
 	  }
 
     @media screen and (max-width:768px){

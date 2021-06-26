@@ -2,6 +2,7 @@ import { FormEvent, useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom'
 import logoLightImg from '../assets/images/logo-light.svg'
 import logoImg from '../assets/images/logo.svg';
+import exitImg from '../assets/images/exit.svg';
 import { Button } from '../components/Button/';
 import { Question } from '../components/Question/';
 import { RoomCode } from '../components/RoomCode/';
@@ -74,8 +75,8 @@ export function Room(){
 						<div className='content'>
 							<img src={theme === 'light' ? logoImg : logoLightImg} alt="Letmeask" />
               <div>
-							<RoomCode code={roomId}/>
-              <Button isOutlined onClick={signOut}>Sair</Button>
+                <RoomCode code={roomId}/>
+                <img onClick={signOut} src={exitImg} alt="Exit" />
               </div>
 						</div>
 					</header>

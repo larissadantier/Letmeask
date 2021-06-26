@@ -18,7 +18,7 @@ type RoomParams = {
 }
 
 export function Room(){
-    const { user } = useAuth();
+    const { user, signOut } = useAuth();
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState('');
     const roomId = params.id;
@@ -67,7 +67,10 @@ export function Room(){
 					<header>
 						<div className='content'>
 							<img src={theme === 'light' ? logoImg : logoLightImg} alt="Letmeask" />
+              <div>
 							<RoomCode code={roomId}/>
+              <Button isOutlined onClick={signOut}>Sair</Button>
+              </div>
 						</div>
 					</header>
 

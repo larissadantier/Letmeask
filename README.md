@@ -27,6 +27,14 @@ Tecnologias utilizadas durante o projeto:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Firebase](https://firebase.google.com/?hl=pt)
 
+## ⭐ Funcionalidades implantadas
+- Responsividade
+- Dark Theme (Todas as telas)
+- Rota Privada
+- SignOut (no Room - visualização do usuário)
+- Tela de Loading
+- Questões ordenadas por likes
+
 ## 💻 Projeto
 
 O Letmeask é uma plataforma de criar salas para que pessoas possam fazer perguntas e serem ajudadas em um terminado tema (Dúvidas de programação e jogos por exemplo) 😄.

@@ -54,6 +54,10 @@
 			margin-top:16px;
 			color: #F8F8F8;
 		}
+
+    @media screen and (max-width:768px){
+      display: none;
+    }
 	}
 
 	main {
@@ -64,6 +68,13 @@
 		display:flex;
 		align-items:center;
 		justify-content:center;
+
+    @media screen and (max-width:768px){
+      display: flex;
+      justify-content:center;
+      flex-direction: column;
+      flex-wrap: wrap;
+   }
 	}
 
 	.main-content{

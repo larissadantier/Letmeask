@@ -40,7 +40,7 @@ export function AuthContextProvider(props: AuthContextProviderProps){
           name: displayName,
           avatar: photoURL
        })
-       setLoading(false);
+       //setLoading(false);
       }
     })
 
@@ -74,9 +74,9 @@ export function AuthContextProvider(props: AuthContextProviderProps){
      history.push('/');
    }
 
-   if(loading){
-    return <Loading/>
-  }
+   /* if(loading){
+    return <Loading />
+  } */
 
     return(
 			<AuthContext.Provider value={{user, signInWithGoogle, signOut}}>

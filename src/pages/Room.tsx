@@ -1,5 +1,5 @@
-import { FormEvent, useState } from 'react';
-import {useParams} from 'react-router-dom'
+import { FormEvent, useEffect, useState } from 'react';
+import {useHistory, useParams} from 'react-router-dom'
 import logoLightImg from '../assets/images/logo-light.svg'
 import logoImg from '../assets/images/logo.svg';
 import { Button } from '../components/Button/';
@@ -22,7 +22,7 @@ export function Room(){
     const params = useParams<RoomParams>();
     const [newQuestion, setNewQuestion] = useState('');
     const roomId = params.id;
-
+    const history = useHistory()
     const { title, questions } = useRoom(roomId);
     const {theme} = useTheme();    
 
@@ -61,6 +61,12 @@ export function Room(){
         })     
       }
     }
+
+    useEffect(() => {
+      if(!user){
+        history.push('/')
+      }
+    }, [user, history])
 
     return(
         <div id='page-room' className={theme}>

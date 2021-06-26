@@ -1,0 +1,30 @@
+#page-loading{
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    height: 900px;
+	  margin: 0 auto;
+
+    .container-loading{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      transform: scale(2);
+      
+      .loader{
+        animation: rotate 1.5s infinite;
+        width:25px;
+        height:25px;
+        margin-top:1rem;
+        border: 3px solid #e5e5e5;
+        border-top-color:#835afd;
+        border-radius: 50%;
+    }
+  }
+}
+
+@keyframes rotate{
+  to {
+    transform: rotate(1turn)
+  }
+}

@@ -1,6 +1,7 @@
 import { auth, firebase } from "../services/firebase";
 import { createContext, ReactNode, useEffect, useState } from 'react'
 import { useHistory } from "react-router-dom";
+import { Loading } from "../components/Loading";
 
 type User = {
   id: string;
@@ -22,6 +23,7 @@ export const AuthContext = createContext({} as AuthContextType);
 
 export function AuthContextProvider(props: AuthContextProviderProps){
 	const [user, setUser] = useState<User>();
+  const [loading, setLoading] = useState(true)
   const history = useHistory();
 
   useEffect(() => {
@@ -38,6 +40,7 @@ export function AuthContextProvider(props: AuthContextProviderProps){
           name: displayName,
           avatar: photoURL
        })
+       setLoading(false);
       }
     })
 
@@ -70,6 +73,11 @@ export function AuthContextProvider(props: AuthContextProviderProps){
      setUser(undefined);
      history.push('/');
    }
+
+   if(loading){
+    return <Loading/>
+  }
+
     return(
 			<AuthContext.Provider value={{user, signInWithGoogle, signOut}}>
 				{props.children}

@@ -84,10 +84,6 @@ Você quer contribuir para o projeto e não sabe como? 💜
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-## 🧾 Contato
-
-[Linkedin](https://www.linkedin.com/in/larissadantier/) - [Instragram](https://www.instagram.com/larissa.dantier/?hl=pt) - larissa_dantier@hotmail.com
-
 ---
 
 ## 👀 Autor

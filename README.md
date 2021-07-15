@@ -26,6 +26,7 @@ Tecnologias utilizadas durante o projeto:
 - [ReactJS](https://pt-br.reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Firebase](https://firebase.google.com/?hl=pt)
+- [Sass](https://sass-lang.com/)
 
 ## ⭐ Funcionalidades implantadas
 - Responsividade

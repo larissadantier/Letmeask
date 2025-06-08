@@ -3,14 +3,14 @@
 </h1>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-licença">Licença</a>
+  <a href="#-license">License</a>
 </p>
 
 <p align="center">
-  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E6&labelColor=121214" alt="License">
+  <img src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E6&labelColor=121214" alt="License">
 </p>
 
 <br>
@@ -19,93 +19,94 @@
   <a href="https://ibb.co/G23yvkt"><img src="https://i.ibb.co/tsPgMcx/post.png" alt="Desktop Letmeask" border="0"></a>
 </p>
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-Tecnologias utilizadas durante o projeto:
+Technologies used in this project:
 
-- [ReactJS](https://pt-br.reactjs.org/)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Firebase](https://firebase.google.com/?hl=pt)
-- [Sass](https://sass-lang.com/)
+* [ReactJS](https://pt-br.reactjs.org/)
+* [TypeScript](https://www.typescriptlang.org/)
+* [Firebase](https://firebase.google.com/?hl=pt)
+* [Sass](https://sass-lang.com/)
 
-## ⭐ Funcionalidades implantadas
-- Responsividade
-- Dark Theme (Todas as telas)
-- Rota Privada
-- SignOut (no Room - visualização do usuário)
-- Tela de Loading
-- Questões ordenadas por likes
+## ⭐ Implemented Features
 
-## 💻 Projeto
+* Responsive design
+* Dark Theme (all screens)
+* Private Route
+* Sign Out (in the Room – user view)
+* Loading Screen
+* Questions ordered by likes
 
-O Letmeask é uma plataforma de criar salas para que pessoas possam fazer perguntas e serem ajudadas em um determinado tema (Dúvidas de programação e jogos por exemplo) 😄.
+## 💻 Project
 
-Este é um projeto desenvolvido durante a **[Next Level Week](https://nextlevelweek.com/)**, realizada pela **[@Rocketseat](https://github.com/Rocketseat)** 21/06/2021 até 25/06/2021.
+Letmeask is a platform to create rooms where people can ask questions and receive help on a given topic (e.g., programming doubts and gaming) 😄.
 
-## 😎 Iniciando 
+This project was developed during the **[Next Level Week](https://nextlevelweek.com/)**, held by **[@Rocketseat](https://github.com/Rocketseat)** from June 21, 2021 to June 25, 2021.
 
-📖 Para rodar o projeto localmente você precisará seguir algumas instruções.
+## 😎 Getting Started
 
-- É necessário que o <a href="https://nodejs.org/en/">NodeJS</a> esteja instalado em sua máquina.
-- É necessário utilizar <a href="https://classic.yarnpkg.com/en/">Yarn</a> ou <a href="https://www.npmjs.com/">Npm</a> para a instalação de pacotes.
+📖 To run the project locally, follow these instructions:
 
-### Instalação
+* You need to have <a href="https://nodejs.org/en/">Node.js</a> installed on your machine.
+* You need to use <a href="https://classic.yarnpkg.com/en/">Yarn</a> or <a href="https://www.npmjs.com/">npm</a> to install packages.
+
+### Installation
+
 ```bash
-# Clone o repositório
+# Clone the repository
 git clone https://github.com/larissadantier/Letmeask.git
 
-# Instale todos os pacotes
+# Install all dependencies
 
-- Npm
+# Using npm
 npm install
 
-- Yarn
+# Using Yarn
 yarn install
-
 ```
+
 ## 🔖 Layout
 
-Visualize o layout do projeto através do link a seguir:
+View the project’s design at the following link:
 
-- [Layout Web](https://www.figma.com/file/bds0ftUNru7tBOhaJqKdaw/Letmeask-NLW?node-id=0%3A1) 
+* [Web Layout (Figma)](https://www.figma.com/file/bds0ftUNru7tBOhaJqKdaw/Letmeask-NLW?node-id=0%3A1)
 
-Você precisa ter uma conta no [Figma](http://figma.com/) para acessá-lo 😉.
+You need a [Figma](http://figma.com/) account to access it 😉.
 
-## Contribuições
+## 🤝 Contributing
+
+Want to contribute to this project and don’t know how? 💜
 ```
-Você quer contribuir para o projeto e não sabe como? 💜
-
-1. Dê Fork no projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Comite as alterações (`git commit -m 'Add some AmazingFeature'`)
-4. Faça o push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
+1. Fork the repository
+2. Create a branch for your feature (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 ```
-## 📝 Licença
+## 📝 License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 👀 Autor
+## 👀 Author
+
 <div align="center">
   <a href="https://app.rocketseat.com.br/me/larissadantier">
-   <img align="center" style="border-radius: 100%;" src="https://avatars3.githubusercontent.com/u/61429963?s=400&u=0182f2fa598437842398e2f08f5dc6622df0b432&v=4" width="100px;" alt=""/>
+    <img align="center" style="border-radius: 100%;" src="https://avatars3.githubusercontent.com/u/61429963?s=400&u=0182f2fa598437842398e2f08f5dc6622df0b432&v=4" width="100px;" alt="Larissa Dantier"/>
   </a>
 </div>
 <br/>
-<p align="center">Desenvolvido por Larissa Dantier 🚀 </p> 
-<p align="center">Entre em contato! 👏 </p>
+<p align="center">Developed by Larissa Dantier 🚀</p>
+<p align="center">Get in touch! 👏</p>
 <div align="center">
-<a href="https://www.linkedin.com/in/larissadantier/" target="_blank">
+  <a href="https://www.linkedin.com/in/larissadantier/" target="_blank">
     <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>&nbsp;&nbsp;
- <a href="https://www.instagram.com/larissa.dantier/" target="_blank">
+  <a href="https://www.instagram.com/larissa.dantier/" target="_blank">
     <img src="https://img.shields.io/badge/instagram-%23E4405F.svg?&style=for-the-badge&logo=instagram&logoColor=white" />        
   </a>&nbsp;&nbsp;
- <a href="mailto:larissa_dantier@hotmail.com">
+  <a href="mailto:larissa_dantier@hotmail.com">
     <img src="https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white" />        
-  </a>&nbsp;&nbsp; 
+  </a>&nbsp;&nbsp;
 </div>
-    
-
